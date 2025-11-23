@@ -1,0 +1,158 @@
+/* --- Global Styles for Context --- */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white; /* Default color for text over the dark background */
+}
+
+/* --- 1. Header Styling --- */
+.header {
+    /* Use position absolute to layer the header over the hero image */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px; /* Padding for spacing */
+    box-sizing: border-box;
+    z-index: 10; /* Ensure it stays above the main content */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo::before {
+    /* Smiley face icon next to the logo text */
+    content: "🙂"; 
+    font-size: 28px;
+    margin-right: 5px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 30px;
+    letter-spacing: 1.5px;
+}
+
+/* --- 2. Hero Section Styling --- */
+.hero-section {
+    /* The main blue-gradient background for the entire section */
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(30, 60, 90, 1) 100%);
+    min-height: 100vh; /* Make it full height */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 150px; /* Space for the header */
+}
+
+.hero-section::before {
+    /* Placeholder for the large background image */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('d334bcd363741f2c5e5f32cd6114f4bd85910290.jpg');
+    background-size: cover;
+    background-position: center top;
+    /* Dark overlay to make the text readable */
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay */
+    z-index: 1;
+}
+
+.hero-content {
+    /* Content over the image */
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+}
+
+.hero-title {
+    font-size: 80px;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: -2px;
+}
+
+.keywords {
+    margin: 20px 0;
+}
+
+.keywords span {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 5px 0;
+    letter-spacing: 2px;
+}
+
+.cta-button {
+    background-color: #9040A5; /* Bright purple color */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 20px 0 50px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle {
+    color: #9040A5; /* Bright purple color for the subtext */
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* --- 3. Profile Cards Styling --- */
+.profile-cards {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Space between cards */
+    padding-bottom: 80px;
+}
+
+.card {
+    width: 180px;
+}
+
+.profile-img-container {
+    /* Creates the circular profile image placeholder */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #555; /* Placeholder color */
+    margin: 0 auto 10px auto;
+    overflow: hidden;
+    /* In a real scenario, background-image or an <img> tag would be used here */
+}
+
+.card .name {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.card .details {
+    color: #bbb; /* Lighter text for details */
+    font-size: 13px;
+    margin: 0;
+    line-height: 1.4;
+}
