@@ -1,56 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Headphones Hero</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="0-styles.css">
+    <title>Headphones</title>
 </head>
+
 <body>
 
-<header class="header fixed-header">
-    <div class="container nav-container">
-        <div class="logo">HEAD<span>PHONES</span></div>
+<header class="header">
+    <nav class="nav container">
+        <div class="logo">Headphones</div>
 
-        <button class="menu-btn" id="menuBtn">☰</button>
+        <ul class="nav-links">
+            <li><a href="#">What we do</a></li>
+            <li><a href="#">Our results</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </nav>
 
-        <nav class="nav">
-            <ul id="navList">
-                <li><a href="#">what we do</a></li>
-                <li><a href="#">our results</a></li>
-                <li><a href="#">contact us</a></li>
-            </ul>
-        </nav>
-    </div>
+    <section class="hero container">
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#" class="btn">CALL TO ACTION</a>
+    </section>
 </header>
 
-<section class="hero">
-    <div class="hero-overlay"></div>
-
-    <div class="glass hero-card fade-in">
-        <div class="container hero-content">
-            <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
-            <p>Lorem ipsum dolor set amet lorem ipsum dolor set</p>
-            <a href="#" class="btn-primary">CALL TO ACTION</a>
-
-            <p class="hero-subtext">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-        </div>
-    </div>
-
-    <div class="hero-curve"></div>
-</section>
-
-<script>
-    const menuBtn = document.getElementById("menuBtn");
-    const navList = document.getElementById("navList");
-
-    menuBtn.addEventListener("click", () => {
-        navList.classList.toggle("show");
-    });
-</script>
 </body>
 </html>
